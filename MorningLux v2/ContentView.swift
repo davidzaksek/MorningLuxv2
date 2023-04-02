@@ -1,21 +1,8 @@
-//
-//  ContentView.swift
-//  MorningLux v2
-//
-//  Created by Klemen Selakovic on 31/03/2023.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        InitialView()
     }
 }
 

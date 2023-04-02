@@ -8,10 +8,16 @@
 import SwiftUI
 
 @main
-struct MorningLux_v2App: App {
+struct YourAppNameApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            InitialView()
         }
+    }
+}
+
+struct Previews_MorningLux_v2App_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
     }
 }

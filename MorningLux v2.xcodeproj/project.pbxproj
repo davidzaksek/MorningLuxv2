@@ -14,6 +14,13 @@
 		66D2156829D6C52500CD93F1 /* MorningLux_v2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2156729D6C52500CD93F1 /* MorningLux_v2Tests.swift */; };
 		66D2157229D6C52500CD93F1 /* MorningLux_v2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2157129D6C52500CD93F1 /* MorningLux_v2UITests.swift */; };
 		66D2157429D6C52500CD93F1 /* MorningLux_v2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2157329D6C52500CD93F1 /* MorningLux_v2UITestsLaunchTests.swift */; };
+		66D2158129D6C72500CD93F1 /* LogoAndExplanationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2158029D6C72500CD93F1 /* LogoAndExplanationView.swift */; };
+		66D2158529D6C91000CD93F1 /* CameraPermissionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2158429D6C91000CD93F1 /* CameraPermissionHelper.swift */; };
+		66D2158829D6DFE300CD93F1 /* InitialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2158729D6DFE300CD93F1 /* InitialView.swift */; };
+		66D2158A29D6E89200CD93F1 /* PermissionDeniedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2158929D6E89200CD93F1 /* PermissionDeniedView.swift */; };
+		66D2158C29D6F22C00CD93F1 /* CameraViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2158B29D6F22C00CD93F1 /* CameraViewScreen.swift */; };
+		66D2158E29D6F25F00CD93F1 /* PreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2158D29D6F25F00CD93F1 /* PreviewView.swift */; };
+		66D2159029D6F4A900CD93F1 /* InfoScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66D2158F29D6F4A900CD93F1 /* InfoScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,14 @@
 		66D2156D29D6C52500CD93F1 /* MorningLux v2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MorningLux v2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		66D2157129D6C52500CD93F1 /* MorningLux_v2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningLux_v2UITests.swift; sourceTree = "<group>"; };
 		66D2157329D6C52500CD93F1 /* MorningLux_v2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorningLux_v2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		66D2158029D6C72500CD93F1 /* LogoAndExplanationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoAndExplanationView.swift; sourceTree = "<group>"; };
+		66D2158429D6C91000CD93F1 /* CameraPermissionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermissionHelper.swift; sourceTree = "<group>"; };
+		66D2158629D6DB3A00CD93F1 /* MorningLux-v2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MorningLux-v2-Info.plist"; sourceTree = SOURCE_ROOT; };
+		66D2158729D6DFE300CD93F1 /* InitialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialView.swift; sourceTree = "<group>"; };
+		66D2158929D6E89200CD93F1 /* PermissionDeniedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionDeniedView.swift; sourceTree = "<group>"; };
+		66D2158B29D6F22C00CD93F1 /* CameraViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewScreen.swift; sourceTree = "<group>"; };
+		66D2158D29D6F25F00CD93F1 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
+		66D2158F29D6F4A900CD93F1 /* InfoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +109,18 @@
 		66D2155529D6C52400CD93F1 /* MorningLux v2 */ = {
 			isa = PBXGroup;
 			children = (
+				66D2158629D6DB3A00CD93F1 /* MorningLux-v2-Info.plist */,
 				66D2155629D6C52400CD93F1 /* MorningLux_v2App.swift */,
+				66D2158729D6DFE300CD93F1 /* InitialView.swift */,
 				66D2155829D6C52400CD93F1 /* ContentView.swift */,
+				66D2158029D6C72500CD93F1 /* LogoAndExplanationView.swift */,
+				66D2158429D6C91000CD93F1 /* CameraPermissionHelper.swift */,
+				66D2158929D6E89200CD93F1 /* PermissionDeniedView.swift */,
 				66D2155A29D6C52500CD93F1 /* Assets.xcassets */,
 				66D2155C29D6C52500CD93F1 /* Preview Content */,
+				66D2158B29D6F22C00CD93F1 /* CameraViewScreen.swift */,
+				66D2158D29D6F25F00CD93F1 /* PreviewView.swift */,
+				66D2158F29D6F4A900CD93F1 /* InfoScreen.swift */,
 			);
 			path = "MorningLux v2";
 			sourceTree = "<group>";
@@ -257,8 +280,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66D2158C29D6F22C00CD93F1 /* CameraViewScreen.swift in Sources */,
+				66D2158E29D6F25F00CD93F1 /* PreviewView.swift in Sources */,
 				66D2155929D6C52400CD93F1 /* ContentView.swift in Sources */,
+				66D2159029D6F4A900CD93F1 /* InfoScreen.swift in Sources */,
+				66D2158529D6C91000CD93F1 /* CameraPermissionHelper.swift in Sources */,
+				66D2158A29D6E89200CD93F1 /* PermissionDeniedView.swift in Sources */,
+				66D2158829D6DFE300CD93F1 /* InitialView.swift in Sources */,
 				66D2155729D6C52400CD93F1 /* MorningLux_v2App.swift in Sources */,
+				66D2158129D6C72500CD93F1 /* LogoAndExplanationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +450,8 @@
 				DEVELOPMENT_TEAM = PH8HB62TJG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MorningLux-v2-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires camera access to measure light exposure for optimizing your circadian rhythm.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +481,8 @@
 				DEVELOPMENT_TEAM = PH8HB62TJG;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MorningLux-v2-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires camera access to measure light exposure for optimizing your circadian rhythm.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
