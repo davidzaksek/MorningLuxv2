@@ -59,6 +59,7 @@
 		66D2158B29D6F22C00CD93F1 /* CameraViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewScreen.swift; sourceTree = "<group>"; };
 		66D2158D29D6F25F00CD93F1 /* PreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewView.swift; sourceTree = "<group>"; };
 		66D2158F29D6F4A900CD93F1 /* InfoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoScreen.swift; sourceTree = "<group>"; };
+		BBB62EAF29DB59800088F922 /* MorningLux v2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "MorningLux v2.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +110,7 @@
 		66D2155529D6C52400CD93F1 /* MorningLux v2 */ = {
 			isa = PBXGroup;
 			children = (
+				BBB62EAF29DB59800088F922 /* MorningLux v2.entitlements */,
 				66D2158629D6DB3A00CD93F1 /* MorningLux-v2-Info.plist */,
 				66D2155629D6C52400CD93F1 /* MorningLux_v2App.swift */,
 				66D2158729D6DFE300CD93F1 /* InitialView.swift */,
@@ -444,10 +446,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "MorningLux v2/MorningLux v2.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MorningLux v2/Preview Content\"";
-				DEVELOPMENT_TEAM = PH8HB62TJG;
+				DEVELOPMENT_TEAM = 98A755RPKD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MorningLux-v2-Info.plist";
@@ -475,10 +478,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "MorningLux v2/MorningLux v2.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MorningLux v2/Preview Content\"";
-				DEVELOPMENT_TEAM = PH8HB62TJG;
+				DEVELOPMENT_TEAM = 98A755RPKD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "MorningLux-v2-Info.plist";

@@ -32,6 +32,79 @@ struct InitialView_Previews: PreviewProvider {
         InitialView()
     }
 }
+struct CameraViewScreen: View {
+    @State private var luxValue: String = "0.00"
+    @State private var exposureDuration: String = "0.00"
+    @State private var infoScreenIsActive = false
+    var body: some View {
+        NavigationView {ZStack {
+            CameraViewController(luxValue: $luxValue,exposureDuration: $exposureDuration)
+                .ignoresSafeArea()
+            
+            VStack {
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        infoScreenIsActive = true
+                    }) {
+                        NavigationLink(destination:InfoScreen()){ Image(systemName: "info.circle")
+                                .resizable()
+                                .frame(width: 24, height: 24)
+                                .padding()
+                            .foregroundColor(.white)}
+                    }
+                }
+                Spacer()
+            }
+            .background(
+                NavigationLink(
+                    destination: InfoScreen(),
+                    label: {
+                        EmptyView()
+                    }
+                )
+                .opacity(0)
+            )
+            
+            VStack {
+                VStack(alignment: .leading) {
+                    Text("LUX Value")
+                        .multilineTextAlignment(.center)
+                        .font(.caption)
+                        .foregroundColor(.white)
+                }
+                VStack(alignment: .leading) {
+                    Text("\(luxValue)")
+                        .multilineTextAlignment(.center)
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                }
+                Spacer()
+                VStack(alignment: .leading) {
+                    Text("Reccommended exposure")
+                        .multilineTextAlignment(.center)
+                        .font(.caption)
+                        .foregroundColor(.white)
+                }
+                VStack(alignment: .leading) {
+                    Text("\(exposureDuration)")
+                        .multilineTextAlignment(.center)
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white)
+                }
+            }
+            .padding()
+        }}
+    }
+}
+struct CameraViewScreen_Previews: PreviewProvider {
+    static var previews: some View {
+        CameraViewScreen()
+    }
+}
+
 
 func checkCameraPermission(completion: @escaping (Bool) -> Void) {
     let authorizationStatus = AVCaptureDevice.authorizationStatus(for: .video)

@@ -29,8 +29,8 @@ struct InfoScreen: View {
             presentationMode.wrappedValue.dismiss()
         }) {
             HStack {
-                Image(systemName: "chevron.left")
-                Text("Back")
+                //Image(systemName: "chevron.left")
+                //Text("Back")
             }
             .foregroundColor(Color.blue)
         })
