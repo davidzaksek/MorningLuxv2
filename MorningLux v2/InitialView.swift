@@ -41,6 +41,12 @@ struct CameraViewScreen: View {
             CameraViewController(luxValue: $luxValue,exposureDuration: $exposureDuration)
                 .ignoresSafeArea()
             
+            // Add a gradient overlay
+                           LinearGradient(gradient: Gradient(colors: [Color.black.opacity(0.5), Color.black.opacity(0)]),
+                                          startPoint: .top,
+                                          endPoint: .bottom)
+                               .edgesIgnoringSafeArea(.all)
+            
             VStack {
                 HStack {
                     Spacer()
