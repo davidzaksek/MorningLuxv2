@@ -76,7 +76,7 @@ extension CameraViewController {
             // Remove the line below if you don't want to transform the lux value
             let transformedLux = transformLuxValue(lux)
             DispatchQueue.main.async {
-                self.parent.luxValue = String(format: "%.10f", luminosity)
+                self.parent.luxValue = String(format: "%.0f", luminosity)
             }
             if(luminosity < 1000){
                 self.parent.exposureDuration = String("Not enough light to start your circadian rhythm")
