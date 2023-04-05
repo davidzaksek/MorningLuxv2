@@ -74,7 +74,7 @@ extension CameraViewController {
             let exposureValue = averageBrightness(for: cameraImage)
             let lux = pow(90, Double(exposureValue)*2) * 12.5
             // Remove the line below if you don't want to transform the lux value
-            let transformedLux = transformLuxValue(lux)
+            _ = transformLuxValue(lux)
             DispatchQueue.main.async {
                 self.parent.luxValue = String(format: "%.0f", luminosity)
             }
