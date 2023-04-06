@@ -10,20 +10,59 @@ struct InfoScreen: View {
                     .font(.title)
                     .fontWeight(.bold)
 
-                Text("MorningLux is a user-friendly app designed to help you optimize your morning light exposure for better health and well-being. Based on scientific research, MorningLux measures the LUX intensity of your environment and provides a personalized timer to ensure you receive the optimal amount of light exposure for your circadian rhythm.")
+                Text("Morning light plays a crucial role in regulating our circadian rhythms, our body's internal clocks that control sleep-wake cycles, hormone release, and other biological processes. Exposure to natural light in the morning helps synchronize our circadian rhythms, leading to better sleep quality, improved mood, and increased daytime alertness.")
                     .font(.body)
 
+                Text("Our Mornings Today")
+                    .font(.title2)
+                    .fontWeight(.bold)
+
+                Text("People today typically spend 90% of their time indoors, away from natural sunlight. This lack of exposure to natural light, especially in the morning, can disrupt our circadian rhythms and lead to various health issues, including poor sleep, low mood, and reduced productivity. MorningLux aims to address this problem by helping you optimize your morning light exposure, even indoors.")
+                    .font(.body)
+                
+                Text("What is LUX?")
+                    .font(.title2)
+                    .fontWeight(.bold)
+
+                Text("LUX (lumens per square meter) is a measurement unit that represents the light intensity in a given area. It is used to quantify the amount of light available in various environments, from indoor spaces to natural sunlight.")
+                    .font(.body)
+                
                 Text("Circadian Rhythm")
                     .font(.title2)
                     .fontWeight(.bold)
 
-                Text("Circadian rhythm is a natural, internal process that regulates the sleep-wake cycle and repeats on each rotation of the Earth, roughly every 24 hours. It can be affected by environmental cues, like sunlight and temperature. MorningLux uses your smartphone's camera to accurately measure the light intensity in your surroundings, calculates the ideal exposure time for you, and helps you track your daily light exposure, set goals, and monitor your progress over time. By optimizing your morning light exposure, you can experience benefits such as better sleep, increased energy, and enhanced well-being.")
+                Text("Our circadian rhythm is a 24-hour internal clock that governs our sleep-wake cycle and other physiological processes. It is influenced by external factors, such as light exposure, and is vital in maintaining our overall health and well-being. Our internal clocks are synchronized with the environment primarily by light, remarkably the sun's natural light. When our circadian rhythm is disrupted, it can lead to sleep disorders, mood disturbances, and other health problems.")
                     .font(.body)
+                
+                
+                
+                Text("Science & Research")
+                    .font(.title2)
+                    .fontWeight(.bold)
+
+                Text("Scientific research has consistently demonstrated the importance of light exposure in regulating our circadian rhythms. Studies have shown that morning light exposure is beneficial for maintaining a healthy sleep-wake cycle and supporting various physiological processes, such as hormone production and body temperature regulation. Research has also revealed the presence of specialized cells in our eyes called intrinsically photosensitive retinal ganglion cells (ipRGCs), which play a crucial role in synchronizing our circadian rhythms with light. These cells are particularly sensitive to blue light, which is abundant in natural sunlight in the morning. Furthermore, numerous studies have investigated the effects of light therapy on various health conditions, including circadian rhythm sleep disorders, depression, dementia, and insomnia. The use of bright light therapy, dawn simulation, and blue light exposure has shown promise in helping to treat these conditions by regulating circadian rhythms and improving overall health. MorningLux incorporates these scientific findings to provide personalized recommendations for optimal morning light exposure. By measuring the LUX intensity in your environment and calculating your ideal exposure time, our app helps you support your circadian rhythm and experience the numerous health benefits associated with adequately timed light exposure.")
+                    .font(.body)
+                
+                
+                
+
+                // Add more information as needed
+            }.padding([.top,.leading,.trailing])
+            VStack(alignment: .leading, spacing: 10) {
+
+                Text("How It Works")
+                    .font(.title2)
+                    .fontWeight(.bold)
+
+                Text("The MorningLux app is intended to be used in the first 30 minutes of waking up and in the outside natural light. MorningLux uses your smartphone's camera to measure the LUX intensity in your environment. Based on this measurement and cutting-edge research, the app calculates your ideal exposure time to morning light for optimal health benefits. Following our personalized recommendations can improve your sleep, mood, and overall well-being. Point your smartphone's camera at the light source you want to measure, and MorningLux will provide an accurate LUX reading. Then, based on this information, the app will generate personalized recommendations for your ideal morning light exposure time. Start using MorningLux today and experience the benefits of a healthier, more balanced lifestyle through the optimized morning light exposure.")
+                    .font(.body)
+                
+                
                 
 
                 // Add more information as needed
             }
-            .padding()
+            .padding([.bottom,.leading,.trailing]).padding(.top,5)
         }
         .navigationBarItems(leading: Button(action: {
             presentationMode.wrappedValue.dismiss()
