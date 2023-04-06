@@ -88,7 +88,7 @@ struct CameraViewScreen: View {
                 }
                 Spacer()
                 VStack(alignment: .leading) {
-                    Text("Reccommended exposure")
+                    Text("Recommended exposure")
                         .multilineTextAlignment(.center)
                         .font(.caption)
                         .foregroundColor(.white)
