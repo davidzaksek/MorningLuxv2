@@ -100,6 +100,26 @@ struct CameraViewScreen: View {
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                 }
+                VStack(alignment: .leading) {
+                    Button(action: {
+                            infoScreenIsActive = true
+                        }) {
+                            NavigationLink(destination: InfoScreen()) {
+                                HStack {
+                                    Spacer() // Add a Spacer on the left side
+                                    Text("What is this?")
+                                        .foregroundColor(.black)
+                                    Spacer() // Add a Spacer on the right side
+                                }
+                                .bold()
+                                .padding()
+                                .frame(maxWidth: .infinity)
+                                .background(Color.white)
+                                .foregroundColor(.black)
+                                .cornerRadius(12)
+                            }
+                        }
+                }
             }
             .padding()
         }}
