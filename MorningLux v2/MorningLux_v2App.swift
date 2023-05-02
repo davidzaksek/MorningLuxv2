@@ -6,12 +6,13 @@
 //
 
 import SwiftUI
+import Foundation
 
 @main
 struct YourAppNameApp: App {
     var body: some Scene {
         WindowGroup {
-            InitialView()
+            InitialView().preferredColorScheme(getColorSchemeBasedOnTime())
         }
     }
 }
@@ -19,5 +20,14 @@ struct YourAppNameApp: App {
 struct Previews_MorningLux_v2App_Previews: PreviewProvider {
     static var previews: some View {
         /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
+    }
+}
+
+func getColorSchemeBasedOnTime() -> ColorScheme {
+    let hour = Calendar.current.component(.hour, from: Date())
+    if hour >= 7 && hour <= 18 {
+        return .light
+    } else {
+        return .dark
     }
 }
